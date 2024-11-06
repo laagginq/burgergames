@@ -1,0 +1,13 @@
+<title>Classroom</title>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+		const player = ruffle.createPlayer();
+        player.style.width = "100%"; 
+        player.style.height = "100%";
+		document.body.appendChild(player);
+		player.load("files/papas-burgeria.swf");
+    });
+</script>
+<script src="public/ruffle.js"></script>

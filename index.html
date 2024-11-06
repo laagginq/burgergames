@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Classroom</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #4285F4;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+        }
+
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .user-info img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #4285F4;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+
+        .sidebar a:hover {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .main-section {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .footer {
+            background-color: #4285F4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .btn {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Google Classroom</h1>
+        <div class="user-info">
+            <img src="https://www.gstatic.com/webp/gallery/1.png" alt="User">
+            <span>John Doe</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>Classes</h3>
+            <a href="burgeria">Math 101</a>
+            <a href="freezeria">History 201</a>
+            <a href="pancakeria">Science 301</a>
+            <a href="pizzeria">English 102</a>
+            <a href="sushiria">Physical Education</a>
+        </div>
+
+        <div class="main-section">
+            <div class="card">
+                <h2>Class Stream</h2>
+                <p>Welcome to your classroom. Here you'll find updates and posts from your teacher.</p>
+                <button class="btn">Post an Update</button>
+            </div>
+
+            <div class="card">
+                <h2>Upcoming Assignments</h2>
+                <p>No upcoming assignments for now.</p>
+                <button class="btn">View All Assignments</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Google Classroom</p>
+    </div>
+</body>
+</html>
